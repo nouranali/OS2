@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/back"
+    tools:ignore="MissingConstraints">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="116dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/right"
+        android:layout_toRightOf="@id/stop"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="114dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/left"
+        android:layout_toLeftOf="@id/stop"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="108dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/up"
+        android:layout_above="@id/stop"
+        android:layout_toLeftOf="@id/right"
+        android:layout_toRightOf="@id/left"/>
+
+    <Button
+        android:id="@+id/backward"
+        android:layout_width="116dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/down"
+        android:layout_below="@id/stop"
+        android:layout_toRightOf="@id/left"
+        android:layout_toLeftOf="@id/right"/>
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="159dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/controller"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="115dp"
+        android:layout_height="101dp"
+        android:background="@drawable/center"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="254dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
